@@ -1,0 +1,110 @@
+
+            <!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+            <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <h1>ScriBBler</h1>
+            <h5>Explore.&nbsp; Imagine.&nbsp; Create</h5>
+            <button id="signIn">Sign In</button>
+            <button id="signUp">Sign Up</button>            
+        </div>
+           
+        <div class="postButtons">
+        	<!-- Insert code for All Posts & Create Post button here -->
+            <button type="button" id="allPost" onclick="">All Posts</button>
+            <button type="button" id="cPost" >Create Post</button>
+        </div>
+    </div>
+
+    <div id="signInModal" class="modalHeader">
+        <!-- Insert code for Sign In modal here style="text-align: center;"-->
+        <div class="modalContentHeader">
+            <span class="shut">&times;</span>
+            <h2>Welcome back!</h2>
+            <hr>
+            <form>
+                Username<br>
+                <input type="text"  placeholder="Enter Username" id="username" required>
+                <br><br>
+                Password<br>
+                <input type="password" placeholder="Enter Password" id="password" required>
+                <br><br>
+                <input style="background-color:  rgb(103, 238, 103);" type="submit" value="Sign In">
+                <p >Not a member?<a href="">Sign Up</a></p>          
+            </form>
+        </div>
+    </div>
+
+    <div id="signUpModal" class="modalHead">
+        <!-- Insert code for Sign Up modal here -->
+        <div class="modalContentHead">
+            <span class="shutHead">&times;</span>
+            <h2>Get Started</h2>
+            <hr>
+            <form>
+                Full Name<br>
+                <input type="text"  placeholder="Enter Full Name"required>
+                <br><br>
+                Username<br>
+                <input type="text"  placeholder="Enter Username" required>
+                <br><br>
+                Password<br>
+                <input type="password" placeholder="Enter Password" required>
+                <br><br>
+                Confirm Password<br>
+                <input type="password" placeholder="Confirm Password" required>
+                <br><br>
+                <input style="background-color: rgb(103, 238, 103);"  type="submit" value="Sign Up">        
+            </form>
+        </div> 
+
+    </div>
+
+ 
+        
+        <div id="myModal" class="modal">
+            <!-- Insert code for Create Post modal here -->
+            <div class="modalContent">
+              <span class="close">&times;</span>
+                 <p>
+                     <h3>Title</h3>
+                     <textarea id = "myTextArea"
+                  rows = "3"
+                  cols = "30">Give title to your post</textarea>
+                     <label><h3>Write your post here...</h3></label>
+          <textarea id = "myTextArea"
+                  rows = "3"
+                  cols = "80">Your text here</textarea>
+        </p>
+           
+            </div>
+          
+          </div>
+          
+
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>
